@@ -2,7 +2,7 @@
 Office automation (OA) is the most frequently used application system for the daily operation and management of the organization, which greatly improves the office efficiency of the company.The system is not strictly filtered, resulting in path traversal problems
 # System situation
 ## version
-V1.0
+V1.1
 ## Project address
 https://gitee.com/aaluoxiang/oa_system
 
