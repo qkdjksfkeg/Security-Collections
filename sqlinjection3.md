@@ -32,5 +32,6 @@ r.txt
 sqlmap test results
 
 ```sqlmap.py -r r.txt```
+
 <img width="1885" height="786" alt="image" src="https://github.com/user-attachments/assets/0068355f-be42-47db-ae94-cbe1f0fd512c" />
 
