@@ -21,15 +21,16 @@ Line 134 uses the getNewBeeMallGoodsPage method.
 <img width="1470" height="614" alt="image" src="https://github.com/user-attachments/assets/2a43083e-331a-4f06-97a4-7ce7809f0c55" />
 
 # verify
-![image](https://github.com/user-attachments/assets/813a3e4c-46af-4ec3-a254-451c87f44887)
+The commodity management module can trigger SQL injection
+<img width="1869" height="1011" alt="image" src="https://github.com/user-attachments/assets/b7a4caf4-ee9d-47c2-9dd1-fcaa7179eea6" />
 
 r.txt
 
-![image](https://github.com/user-attachments/assets/a76490f4-f670-4e88-a61c-28a4aa857f30)
+<img width="897" height="428" alt="image" src="https://github.com/user-attachments/assets/c07fae72-7060-4d87-9b75-1d9f274d259f" />
+
 
 sqlmap test results
 
 ```sqlmap.py -r r.txt```
+<img width="1885" height="786" alt="image" src="https://github.com/user-attachments/assets/0068355f-be42-47db-ae94-cbe1f0fd512c" />
 
-![image](https://github.com/user-attachments/assets/9ff7a993-b6e9-427e-abeb-f07da0516efa)
-![image](https://github.com/user-attachments/assets/b27d4207-df5d-4e52-80f9-de45d16ccac8)
