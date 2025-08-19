@@ -26,7 +26,8 @@ The commodity management module can trigger SQL injection
 
 r.txt
 
-<img width="897" height="428" alt="image" src="https://github.com/user-attachments/assets/c07fae72-7060-4d87-9b75-1d9f274d259f" />
+<img width="902" height="414" alt="image" src="https://github.com/user-attachments/assets/41461267-f1f8-4703-a8ac-fac003683151" />
+
 
 
 sqlmap test results
