@@ -1,5 +1,5 @@
 # Description of the vulnerability
-Office automation (OA) is the most frequently used application system for the daily operation and management of the organization, which greatly improves the office efficiency of the company.There is SQL injection vulnerability in the background of the system
+The newbee-mall project is an e-commerce system developed based on Spring Boot and related technology stacks. The front desk mall system includes modules such as the home page portal, product classification, personal order management, etc. The background management system includes modules such as data panels, order management, and Settings.
 # System situation
 ## version
 V1.0.0
