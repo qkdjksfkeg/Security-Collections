@@ -7,7 +7,7 @@ V1.0.0
 https://github.com/newbee-ltd/newbee-mall
 
 # analyse
-1. The carousel parameters on line 62 of the NewBeeMallCarouselController file are externally controllable.
+1.The carousel parameters on line 62 of the NewBeeMallCarouselController file are externally controllable.
 <img width="1342" height="695" alt="image" src="https://github.com/user-attachments/assets/92853153-4eeb-4b9a-8ac4-6b1e534c9e16" />
 2.The SQL execution is triggered on line 35 of NewBeeMallCarouselServiceImpl to add data to the database
 <img width="1497" height="660" alt="image" src="https://github.com/user-attachments/assets/5d5f2646-e9cf-4a47-bc58-edd4e98bf82a" />
