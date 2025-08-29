@@ -19,6 +19,7 @@ https://github.com/newbee-ltd/newbee-mall
 When adding products, enter test statements in the configName and redirectUrl fields. After successful addition, clicking on the configuration of best-selling products to view the configuration list will trigger an XSS vulnerability
 <img width="1810" height="956" alt="image" src="https://github.com/user-attachments/assets/e1176a1f-e0c6-4c0b-ae60-2ca6951fa7a1" />
 <img width="1450" height="636" alt="image" src="https://github.com/user-attachments/assets/968a3a5e-1b51-4a47-8c24-9126bdf667c2" />
+<img width="1852" height="933" alt="image" src="https://github.com/user-attachments/assets/f00de51c-7410-4dd5-8a9f-b125ca5a8565" />
 <img width="1868" height="907" alt="image" src="https://github.com/user-attachments/assets/6287bcc3-54b5-4b04-8f95-880e299c9345" />
 
 
