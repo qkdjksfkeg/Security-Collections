@@ -25,7 +25,7 @@ r.txt
 
 sqlmap test results
 
-```sqlmap -r r.txt --dbs``
+```sqlmap -r r.txt --dbs```
 
 <img width="1343" height="824" alt="image" src="https://github.com/user-attachments/assets/671cad69-64f6-4f5f-b357-9eff6550bee6" />
 
