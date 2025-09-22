@@ -1,33 +1,34 @@
 # Description of the vulnerability
-Office automation (OA) is the most frequently used application system for the daily operation and management of the organization, which greatly improves the office efficiency of the company.There is SQL injection vulnerability in the background of the system
+Mini-Tmall is a mini Tmall mall based on Spring Boot, which can be quickly deployed and run, and is suitable as a template for completion.There is an SQL injection in the background of this system
 # System situation
 ## version
-V1.1
+2025/02/11 latest
 ## Project address
-https://gitee.com/aaluoxiang/oa_system
+https://gitee.com/project_team/Tmall_demo
 
 # analyse
-1.The global search found that ${baseKey} is used as a connection parameter in src/main/resources/mappers/address-mapper.xml.  So, if we can control the parameters, it's going to cause SQL injection.
-![image](https://github.com/user-attachments/assets/01f5a411-8f54-4d2c-a3ee-36060213eb99)
-
-2.Find the allDirector() method declaration in src/main/java/cn/gson/oasys/mappers/AddressMapper.java.  You can control baseKey.  Let's go ahead and find where the allDirector() method is called.
-![image](https://github.com/user-attachments/assets/c41cad96-9f00-4f68-96ef-8c8d18cd64cf)
-
-3.Clearly, we directly into the controller layer and found baseKey parameters in src/main/Java/cn/gson/oasys/controller/address/AddrController Java:483 incoming. The allDirector () method is then called on line 489 to execute the SQL query. Therefore, as long as we are able to pass the corresponding parameters over HTTP, the SQL injection vulnerability can be triggered.
-![image](https://github.com/user-attachments/assets/9a6c6bbd-a890-4a32-8ba9-4e99d4504347)
+1.The global search found that ${orderUtil. orderBy} is used as a connection parameter in mybatis/mapper/RewardMapper.xml:74. So, if we can control the parameters, it's going to cause SQL injection.
+<img width="1586" height="497" alt="image" src="https://github.com/user-attachments/assets/15fac788-5cd7-4b35-bdfc-b82a67ccf99c" />
+2.Find the select() method declaration in com/xq/tmall/dao/RewardMapper.java:17. You can control orderUtil. orderBy by passing an argument to orderUtil. Let's go ahead and find where the select() method is called.
+<img width="1578" height="672" alt="image" src="https://github.com/user-attachments/assets/bb3a61e4-a19d-40d6-9ab8-5e9eb918e0a0" />
+3.You can see the call to RewardMapper.select() found in com/xq/tmall/service/impl/RewardServiceImpl.java:43. Let's go up and see where getList() is called.
+<img width="1424" height="635" alt="image" src="https://github.com/user-attachments/assets/5c2fd084-02c6-4089-83ff-a87e83319a31" />
+4.It is obvious that we went directly to the controller layer and found that getList() was called in com/xq/tmall/controller/admin/RewardController.java:97. SQL injection can be triggered by controlling the orderUtil parameter
+<img width="1499" height="710" alt="image" src="https://github.com/user-attachments/assets/37bea08c-e9c7-41f5-b700-23724018802f" />
+5.The orderBy parameter without checking passed directly to OrderUtil method
+<img width="1438" height="927" alt="image" src="https://github.com/user-attachments/assets/36efbb2d-be4d-46fa-9afd-b06263f62984" />
 
 # verify
-![image](https://github.com/user-attachments/assets/b98bdd8d-e24c-46a3-a6b6-565109cf4b4d)
 
 r.txt
 ![image](https://github.com/user-attachments/assets/a18389be-0cab-4f30-81d7-124a10199f30)
 
 sqlmap test results
 
-```sqlmap.py -r r.txt```
+```sqlmap -r r.txt --dbs``
 
-![image](https://github.com/user-attachments/assets/1b68078b-8ab0-4840-8498-ad8a57027fce)
-![image](https://github.com/user-attachments/assets/5ab5db03-942a-41ac-b6a0-3489265df483)
+<img width="1343" height="824" alt="image" src="https://github.com/user-attachments/assets/671cad69-64f6-4f5f-b357-9eff6550bee6" />
+
 
 
 
