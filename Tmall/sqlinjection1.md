@@ -19,10 +19,6 @@ https://gitee.com/project_team/Tmall_demo
 <img width="1438" height="927" alt="image" src="https://github.com/user-attachments/assets/36efbb2d-be4d-46fa-9afd-b06263f62984" />
 
 # verify
-
-r.txt
-
-
 sqlmap test results
 
 ```sqlmap -r r.txt --dbs```
